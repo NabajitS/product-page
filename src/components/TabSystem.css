@@ -1,0 +1,97 @@
+.tab-system {
+    margin-top: 30px;
+}
+
+.tab-buttons button {
+    margin-left: 30px;
+    padding: 8px 20px;
+    border: transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+.tab-buttons button:hover {
+    border-bottom: 2px solid blue;
+}
+
+.tab-system-content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.tab-content {
+    width: 70%;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.tab-content ul {
+    margin-top: 10px;
+    line-height: 25px;
+    padding-left: 50px;
+}
+
+.documents {
+    background-color: rgb(41, 134, 165);
+    width: 30%;
+    padding: 30px 40px 20px 40px;
+    line-height: 25px;
+}
+
+.documents div:nth-child(1) {
+    border: 2px solid rgb(255, 255, 255);
+    width: 100%;
+    padding: 8px 5px;
+}
+
+.documents .file {
+    color: rgb(251, 223, 223);
+    width: 100%;
+    padding: 8px 5px;
+}
+
+.money-div {
+    margin-top: 30px;
+    line-height: 28px;
+}
+
+.content {
+    display: none;
+}
+
+.show-content {
+    display: block;
+}
+
+.deck-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 0;
+    margin-bottom: 25px;
+}
+
+.deck-info a {
+    color: white;
+    background-color: rgb(56, 45, 175);
+    padding: 8px 10px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .tab-system {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .tab-content {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .documents {
+        display: none;
+    }
+}

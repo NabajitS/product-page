@@ -1,0 +1,112 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.navbar a,
+.sidenav a {
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-right: 2.5vw;
+    transition: transform .2s ease-in;
+    display: inline-block;
+}
+
+.navbar a:hover,
+.sidenav a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.navbar img,
+.sidenav img {
+    height: 35px;
+}
+
+.navbar button,
+.sidenav button {
+    font-size: 15px;
+    padding: 8px 18px;
+}
+
+.navbar button:hover,
+.sidenav button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.ham-icon {
+    display: none;
+}
+
+
+
+/* --------------------Responsive Design ------------------------ */
+
+/* If the browser window is 600px or smaller, the background color will be lightblue: */
+
+@media only screen and (max-width: 700px) {
+
+    .temp-sidenav {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 80%;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: all 0.5s ease-in;
+        padding-top: 60px;
+    }
+
+    .closing-sidenav {
+        transition: all 1s;
+    }
+
+    .ham-icon {
+        display: inline-block;
+        height: 30px;
+        width: 30px
+    }
+
+    .nav-key-links {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sidenav a {
+        display: block;
+        margin-top: 10vh;
+        font-size: 20px;
+        /* background-color: aqua; */
+    }
+
+    .sidenav a:focus {
+        background-color: white;
+    }
+
+    .sidenav button {
+        margin: 0 auto;
+        margin-top: 10vh;
+        padding: 10px 0;
+        width: 105%;
+    }
+
+}

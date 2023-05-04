@@ -1,0 +1,66 @@
+.footer {
+    margin-top: 60px;
+    /* height: 30vh; */
+    color: white;
+    background-image: linear-gradient(to bottom, #3839e3, #3335d0, #2e31bd, #292dab, #252999, #23278d, #212482, #1f2276, #1f216e, #1e2065, #1e1e5d, #1d1d55);
+}
+
+.footer a {
+    color: white;
+}
+
+.footer h4 {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.flex-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 0;
+    line-height: 30px;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+
+.footer-item .company-logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.flex-container .footer-item:nth-child(1) {
+    /* background-color: aquamarine; */
+    padding: 20px;
+}
+
+.footer-icons {
+    margin-top: 30px;
+}
+
+.footer-icons img {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .flex-container {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
